@@ -1,0 +1,8 @@
+@Test
+void groupedAssertions() {
+    Address address = new Address();
+    assertAll("address name",
+        () -> assertEquals("John", address.getFirstName()),
+        () -> assertEquals("User", address.getLastName())
+    );
+}
