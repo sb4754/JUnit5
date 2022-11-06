@@ -6,3 +6,12 @@ void groupedAssertions() {
         () -> assertEquals("User", address.getLastName())
     );
 }
+
+
+
+
+If these tests fail, the result looks like the following:
+
+=> org.opentest4j.MultipleFailuresError: address name (2 failures)
+expected: <John> but was: <null>
+expected: <User> but was: <null>
